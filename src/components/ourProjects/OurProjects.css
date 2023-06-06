@@ -1,0 +1,28 @@
+.__container {
+  width: 1234px;
+  margin: 0 auto;
+}
+.ddd {
+  background-image: url("../resources/proj.gif");
+  /* max-width: 1920px; */
+  height: 1044px;
+}
+.projects {
+  background-color: black;
+  height: 1044px;
+}
+
+.title__projects {
+    padding-top: 100px;
+    text-align: center;
+  margin: 0 auto;
+  width: 308px;
+  height: 59px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.aaa{
+  padding-top: 85px;
+}
