@@ -22,7 +22,7 @@ const Career = () => {
           />
           <Cart
             img={hearth}
-            title="Junior Unity Developer"
+            title="Junior Game Designer"
             text1="Good understanding of game design and mechanics"
             text2="Bachelor's degree in BSUIR or BSU"
             text3="Gay Orientation"
@@ -31,7 +31,7 @@ const Career = () => {
           />
           <Cart
             img={user}
-            title="Junior Unity Developer"
+            title="Trainee Cleaner (Trofim)"
             text1="Good understanding of game design and mechanics"
             text2="Bachelor's degree in BSUIR or BSU"
             text3="Gay Orientation"
