@@ -1,5 +1,6 @@
-.__container {
+.__containerH {
   width: 1234px;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -22,13 +23,16 @@
   color: #ffffff;
 }
 
-.app__menu {
+.contact {
+  display: none;
+}
+.item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  width: 295px;
+  width: 303px;
   height: 24px;
   left: calc(50% - 295px / 2 - 0.5px);
   top: 36px;
@@ -45,27 +49,11 @@
   height: 46px;
 }
 
-.menu__section {
-  height: 24px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 3px;
-  color: #ffffff;
-}
-
-.menu__section:not(:last-child) {
-  padding-right: 23px;
-}
-
 .background {
   height: 944px;
   background-image: url("../resources/giphy\ 1.gif"),
     url("../resources/Mask.gif");
+  
   background-repeat: no-repeat;
   background-position: 944px 15px, 0% 0%;
   background-size: 920.13px 914px, contain;
@@ -82,6 +70,9 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
+  .__containerH {
+    width: 1200px;
+  }
   .background {
     height: 744px;
     background-position: 703px 0px, 0% 0%;
@@ -95,6 +86,9 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1279px) {
+  .__containerH {
+    width: 960px;
+  }
   .background {
     height: 710px;
     background-position: 589px 1px, 0% 0%;
@@ -106,10 +100,12 @@
     height: 140px;
     font-size: 80px;
   }
-
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .background {
+  .__containerH {
+    width: 750px;
+  }
+  .background {
     height: 630px;
     background-position: 411px 4px, 0% 0%;
     background-size: 637.13px 615px, contain;
@@ -122,10 +118,49 @@
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-    .background {
+  .__containerH {
+    width: 450px;
+  }
+  .mobail__dtn {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .app__menu {
+    display: block;
+    top: -100%;
+  }
+  .app__menu.open {
+    display: block;
+    top: 115px;
+    align-items: self-end;
+    transition: top 5s;
+  }
+
+  .contact {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .menu__section {
+    line-height: 24px;
+    width: 100px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .btn__header {
+    display: none;
+  }
+
+  .menu__section:not(:last-child) {
+    padding-right: 23px;
+  }
+
+  .background {
     height: 730px;
-    background-position: 230px 65px, 0% 0%;
-    background-size: 565.13px 545px, contain;
+    background-position: 356px 83px, 0% 0%;
+    background-size: 490.13px 470px, contain;
   }
   .title__header {
     margin: 0 auto;
@@ -135,10 +170,17 @@
   }
 }
 @media (min-width: 350px) and (max-width: 479px) {
-    .background {
-      height: 730px;
-      background-position: 173px 132px, 0% 0%;
-      background-size: 389px 386px, contain;
+  .btn__header {
+    display: none;
+  }
+  .contact {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .background {
+    height: 730px;
+    background-position: 173px 132px, 0% 0%;
+    background-size: 389px 386px, contain;
   }
   .title__header {
     margin: 0 auto;
@@ -147,10 +189,149 @@
     font-size: 32px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 350px) {
 }
 
+.nav__brand {
+  text-transform: uppercase;
+}
 
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.nav__link {
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
 
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 23px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 5px;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+}
 
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+    padding-right: 30px;
+  }
+  .nav__menu {
+    position: fixed;
+    align-items: end;
+    top: 11vh;
+    border-radius: 0 0 20px 20px;
+    background: #000000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 600px;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .nav__link {
+    padding-right: 30px;
+  }
+  .logo {
+    padding-left: 30px;
+  }
+  .__containerH {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .item {
+    left: 0;
+  }
+  .fix {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 117px;
+    background: black;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 600px) {
+  .__containerH {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .fix {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .nav__menu {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .__containerH {
+    margin: 0 auto;
+    width: 450px;
+  }
+  .fix {
+    margin: 0 auto;
+    width: 450px;
+  }
+  .nav__menu {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .__containerH {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .fix {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .nav__menu {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .__containerH {
+    margin: 0 auto;
+    width: 370px;
+  }
+  .fix {
+    margin: 0 auto;
+    width: 370px;
+  }
+  .nav__menu {
+    width: 370px;
+  }
+}
 
+.nav__active {
+  opacity: 1;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(0px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -10px);
+}

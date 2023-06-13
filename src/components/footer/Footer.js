@@ -1,6 +1,5 @@
 import "./Footer.css";
 import logo_f from "../resources/Logologo.svg";
-import path from "../resources/Path.svg";
 
 import telegram from "../resources/Telegram.svg";
 import youtube from "../resources/Youtube.svg";
@@ -12,13 +11,13 @@ const Footer = () => {
     <div className="footer__container">
       <div className="footer __container">
         <div className="footer__content">
-          <div className="footer__logo">
+          <a  href="#header" className="footer__logo">
             <img src={logo_f} alt="logo_f" />
-          </div>
-          <div className="footer__text">
+          </a>
+          {/* <div className="footer__text">
             Subscribe for our vacancies Make your vision real
-          </div>
-          <div className="footer__form">
+          </div> */}
+          {/* <div className="footer__form">
             <form action="#">
               <input
                 required
@@ -31,7 +30,7 @@ const Footer = () => {
                 <img src={path} alt="path" />
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="social__footer __container">
           <div className="social__text">

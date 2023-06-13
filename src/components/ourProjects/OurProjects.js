@@ -3,11 +3,11 @@ import Slider from "./Slider";
 
 const OurProjects = () => {
   return (
-    <div className="projects">
-      <div className="ddd">
+    <div className="projects" id="games">
+      <div className="project__bloc">
         <div className="__container">
           <div className="title__projects">Our projects</div>
-          <div className="aaa">
+          <div className="slider__content">
             <Slider/>
           </div>
         </div>
