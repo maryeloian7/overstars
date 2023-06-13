@@ -7,7 +7,7 @@ import user from "../resources/User.png";
 
 const Career = () => {
   return (
-    <div className="career__container">
+    <div className="career__container" id="career">
       <div className="body__container">
         <h2 className="career_title">Career</h2>
         <div className="carts__container">

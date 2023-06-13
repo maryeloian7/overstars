@@ -25,17 +25,17 @@ const Header = () => {
           <div className="item">
             <ul className={active}>
               <li className="nav__item">
-                <a href="/" className="nav__link ">
+                <a href="#games" className="nav__link ">
                   Games
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/" className="nav__link">
+                <a href="#career" className="nav__link">
                   Career
                 </a>
               </li>
               <li className="nav__item">
-                <a href="/" className="nav__link">
+                <a href="#about_us" className="nav__link">
                   About us
                 </a>
               </li>
