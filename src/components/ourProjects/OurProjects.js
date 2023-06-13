@@ -3,7 +3,7 @@ import Slider from "./Slider";
 
 const OurProjects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="games">
       <div className="project__bloc">
         <div className="__container">
           <div className="title__projects">Our projects</div>

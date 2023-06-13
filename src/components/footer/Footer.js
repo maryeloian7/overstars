@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="footer__logo">
             <img src={logo_f} alt="logo_f" />
           </div>
-          <div className="footer__text">
+          {/* <div className="footer__text">
             Subscribe for our vacancies Make your vision real
-          </div>
-          <div className="footer__form">
+          </div> */}
+          {/* <div className="footer__form">
             <form action="#">
               <input
                 required
@@ -31,7 +31,7 @@ const Footer = () => {
                 <img src={path} alt="path" />
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="social__footer __container">
           <div className="social__text">
