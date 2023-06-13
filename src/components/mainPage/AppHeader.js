@@ -16,10 +16,10 @@ const Header = () => {
     } else setIcon("nav__toggler");
   };
   return (
-    <div className="header__container">
+    <div className="header__container" id="header">
       <nav className="nav __containerH ">
         <div className="fix app__header ">
-          <a href="/" className="logo">
+          <a href="#header" className="logo">
             <img src={logo} alt="logo" />
           </a>
           <div className="item">

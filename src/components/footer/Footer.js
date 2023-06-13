@@ -1,6 +1,5 @@
 import "./Footer.css";
 import logo_f from "../resources/Logologo.svg";
-import path from "../resources/Path.svg";
 
 import telegram from "../resources/Telegram.svg";
 import youtube from "../resources/Youtube.svg";
@@ -12,9 +11,9 @@ const Footer = () => {
     <div className="footer__container">
       <div className="footer __container">
         <div className="footer__content">
-          <div className="footer__logo">
+          <a  href="#header" className="footer__logo">
             <img src={logo_f} alt="logo_f" />
-          </div>
+          </a>
           {/* <div className="footer__text">
             Subscribe for our vacancies Make your vision real
           </div> */}
