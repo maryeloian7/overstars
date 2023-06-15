@@ -1,6 +1,6 @@
-import share from "../resources/AboutUs.gif"
+import share from "../../resources/AboutUs.gif";
 
-import "./AboutUs.css"
+import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
@@ -9,7 +9,12 @@ const AboutUs = () => {
         <div className="about_body">
           <div className="about_content">
             <h2 className="about_title">About us</h2>
-            <span><img src={share} alt="share" className="adaptive_shape_img"/></span>
+            <span>
+              {/* <video src={share} loop autoPlay>
+                <source src={share} type="video/webm" />
+              </video> */}
+              <img src={share} alt="share" className="adaptive_shape_img"/>
+            </span>
             <div className="about_text">
               We are a rapidly growing mobile GayDev studio, driven by our
               passion for creating exceptional gaming experiences. With a team
@@ -21,7 +26,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="shape">
-            <img src={share} alt="share" className="shape_img"/>
+            <img src={share} alt="share" className="shape_img" />
           </div>
         </div>
       </div>

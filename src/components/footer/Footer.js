@@ -1,10 +1,10 @@
 import "./Footer.css";
-import logo_f from "../resources/Logologo.svg";
+import logo_f from "../../resources/Logologo.svg";
 
-import telegram from "../resources/Telegram.svg";
-import youtube from "../resources/Youtube.svg";
-import twit from "../resources/Twitter.svg";
-import discord from "../resources/Discord.svg";
+import telegram from "../../resources/Telegram.svg";
+import youtube from "../../resources/Youtube.svg";
+import twit from "../../resources/Twitter.svg";
+import discord from "../../resources/Discord.svg";
 
 const Footer = () => {
   return (

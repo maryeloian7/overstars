@@ -1,17 +1,17 @@
 import "./Career.css";
-import Cart from "./Cards";
+import Card from "./Cards";
 
-import fire from "../resources/Fire.png";
-import hearth from "../resources/Hearth.png";
-import user from "../resources/User.png";
+import fire from "../../resources/Fire.png";
+import hearth from "../../resources/Hearth.png";
+import user from "../../resources/User.png";
 
 const Career = () => {
   return (
     <div className="career__container" id="career">
       <div className="body__container">
         <h2 className="career_title">Career</h2>
-        <div className="carts__container">
-          <Cart
+        <div className="cards__container">
+          <Card
             img={fire}
             title="Junior Unity Developer"
             text1="Good understanding of game design and mechanics"
@@ -20,7 +20,7 @@ const Career = () => {
             text4="Passion for gaming and staying  updated with industry trends"
             text5="Good communication  and teamwork abilities"
           />
-          <Cart
+          <Card
             img={hearth}
             title="Junior Game Designer"
             text1="Good understanding of game design and mechanics"
@@ -29,7 +29,7 @@ const Career = () => {
             text4="Passion for gaming and staying  updated with industry trends"
             text5="Good communication  and teamwork abilities"
           />
-          <Cart
+          <Card
             img={user}
             title="Trainee Cleaner (Trofim)"
             text1="Good understanding of game design and mechanics"

@@ -1,4 +1,4 @@
-import logo from "../resources/Logologo.svg";
+import logo from "../../resources/Logologo.svg";
 import "./AppHeader.css";
 
 import { useState } from "react";
@@ -47,18 +47,21 @@ const Header = () => {
             </ul>
           </div>
           <button className="btn__header">Contact</button>
-
           <div onClick={navToggle} className={icon}>
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
           </div>
         </div>
-      </nav>
+      </nav>     
+  
       <div className="background">
-        <h1 className="title__header __container">OVERSTARS GAMES</h1>
+       <h1 className="title__header ">OVERSTARS GAMES</h1>
       </div>
-    </div>
+
+      
+
+</div>
   );
 
 };
