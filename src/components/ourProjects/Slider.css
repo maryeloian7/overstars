@@ -27,7 +27,11 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 52px);
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: max-content;
 }
+
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
